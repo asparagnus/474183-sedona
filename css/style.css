@@ -1,0 +1,96 @@
+/* Шрифты Меню - PTSans */
+body {
+    font-family: "PT Sans", "Arial", serif;
+    font-weight: normal;
+    background-color: #ffffff;
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.top-filter h4 {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+h3 .index-about-city {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+h3. indexh3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+h2 .index-form-reg {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+/*
+nav{
+	font-size: 14px;
+	line-height: 26px;
+	}
+li .active{
+color: #766357;
+}
+section .top-filter input[type="checkbox"] {
+	font-size: 14px;
+	line-height: 21px
+	color: #ffffff;
+}
+section .top-filter input[type="range"] {
+	font-size: 14px;
+	line-height: 21px
+	color: #ffffff;
+p .sorting{
+	font-size: 12px;
+	line-height: 18px
+}
+ul .options{
+	font-size: 12px;
+	line-height: 18px;
+}
+li .price{
+	color: #81b3d2;
+}
+li .no-active-options{
+	color: "???"
+}
+p{
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+p .read-more-book-it{
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+индекс
+p .fаive reasons{
+font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+}
+*/
+
+
+
