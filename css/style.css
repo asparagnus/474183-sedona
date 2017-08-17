@@ -1,0 +1,98 @@
+/* Шрифты Меню - PTSans */
+body {
+    font-family: "PT Sans", "Arial", serif;
+    font-weight: normal;
+    background-color: #ffffff;
+}
+
+.vicualli-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.white {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.black {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.found {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.index-city {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.index-form {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+/*
+ПО КЛАССАМ!!!
+nav{
+	font-size: 14px;
+	line-height: 26px;
+	}
+li .active{
+color: #766357;
+}
+section .top-filter input[type="checkbox"] {
+	font-size: 14px;
+	line-height: 21px
+	color: #ffffff;
+}
+section .top-filter input[type="range"] {
+	font-size: 14px;
+	line-height: 21px
+	color: #ffffff;
+p .sorting{
+	font-size: 12px;
+	line-height: 18px
+}
+ul .options{
+	font-size: 12px;
+	line-height: 18px;
+}
+li .price{
+	color: #81b3d2;
+}
+li .no-active-options{
+	color: "???"
+}
+p{
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+p .read-more-book-it{
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+индекс
+p .fаive reasons{
+font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+}
+*/
+
+
+

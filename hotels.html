@@ -1,26 +1,27 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-</head>
+    <title>Седона отели</title>
+    <link rel="stylesheet" href="css/style.css">
+   </head>
 <body>
 <header>
-    <img src="http://placehold.it/100x100" alt="Логотип Седоны">
+    <img src="img/sedona-hotels/logo.png" width="138" height="70" alt="Логотип Седоны">
     <nav>
         <ul class="menu">
             <li><a href="info.html">Информация</a></li>
             <li><a href="photo-video.html">Фото и видео</a></li>
             <li><a href="map-state.html">Карта штата</a></li>
-            <li>Гостиницы</li>
+            <li class="activ">Гостиницы</li>
         </ul>
-        <img src="http://placehold.it/1200x500" alt="welcome to Sedona">
+        <img src="img/sedona-hotels/head-background.jpg" width="1200" height="217" alt="Sedona">
     </nav>
 </header>
 <main class="choice-hotels">
-    <h2 class="visually-hidden">Гостиницы Седоны</h2>
-    <section>
-        <h4>Инфраструктура:</h4>
+    <h1 class="vicualli-hidden ">Гостиницы Седоны</h1>
+    <section class="top-filter">
+        <h4 class="white">Инфраструктура:</h4>
         <form action="#" method="post">
             <label for="bassein">Бассейн</label>
             <input type="checkbox" id="bassein" checked>
@@ -29,7 +30,7 @@
             <label for="wifi">WI-FI</label>
             <input type="checkbox" id="wifi">
         </form>
-        <h4>Тип жилья:</h4>
+        <h4 class="white">Тип жилья:</h4>
         <form action="#" method="post">
             <label for="hotel">Отель</label>
             <input type="checkbox" id="hotel" checked>
@@ -38,7 +39,7 @@
             <label for="apartaments">Апартаменты</label>
             <input type="checkbox" id="apartaments" checked>
         </form>
-        <h4>Стоимость в сутки (р):</h4>
+        <h4 class="white">Стоимость в сутки (р):</h4>
         <form action="#" method="post">
             step="1"
             1<input type="range" id="price" name="priceday" min="0" max="3000">
@@ -48,67 +49,79 @@
         </form>
     </section>
     <section>
-        <h3>НАЙДЕНО:<span>3</span></h3>
-        <strong>СОРТИРОВКА:</strong>
-        <ul>
-            <li>ПО ЦЕНЕ</li>
-            <li><a href="type.html">ПО ТИПУ</a></li>
-            <li><a href="reit.html">ПО РЕЙТИНГУ</a></li>
+        <h2 class="found">НАЙДЕНО:<span>3</span></h2>
+        <p class="sorting">СОРТИРОВКА:</p>
+        <ul class="options">
+            <li class="price">ПО ЦЕНЕ</li>
+            <li class="no-active-options"><a href="type.html">ПО ТИПУ</a></li>
+            <li class="no-active-v"><a href="reit.html">ПО РЕЙТИНГУ</a></li>
         </ul>
-        <img src="http://placehold.it/20x20" alt="Стрелки сортировки">
+        <div class="arrows">
+            <img src="img/sedona-hotels/arrow-blue.svg" alt="Стрелки сортировки">
+            <img src="img/sedona-hotels/arrow-gray.svg" alt="Стрелки сортировки">
+        </div>
     </section>
-    <section>
-        <img src="http://placehold.it/130x90" alt="Фото гостиница">
-        <h4><a href="amara.html">AMARA RESORT&SPA </a></h4>
+        <div class="line-gorizont">
+        <img src="img/sedona-hotels/grey-line-gorizont.svg">
+    </div>
+        <section>
+        <img src="img/sedona-hotels/amara-hotel.jpg" width="135" height="90" alt="Фото гостиница">
+        <h2 class="found"><a href="###">AMARA RESORT&SPA </a></h2>
         <p>Гостиница от 4000р.</p>
-        <p><a href="amara.html" class="more-detailed">Подробнее</a>
+        <p class=".read-more-book-it"><a href="amara.html">Подробнее</a>
             <a href="form.html" class="registration">Забронировать</a>
         </p>
     </section>
-    <div>
-        <img src="http://placehold.it/5x5" alt="Звездочки">
-        <img src="http://placehold.it/5x5" alt="Звездочки">
-    </div>
+    <div class="srars">
+        <img src="img/sedona-hotels/stars-four.svg" alt="Звездочки">
+        </div>
     <p>Рейтинг: <span>8.9</span></p>
+    <div class="line-gorizont">
+        <img src="img/sedona-hotels/grey-line-gorizont.svg">
+    </div>
     <section>
-        <img src="http://placehold.it/130x90" alt="Фото мотель">
-        <h4><a href="desert.html">Desert quail inn</a></h4>
+        <img src="img/sedona-hotels/desert-hotel.jpg" width="135" height="90" alt="Фото мотель">
+        <h2 class="found"><a href="###">Desert quail inn</a></h2>
         <p>Мотель от 3000р.</p>
-        <p><a href="desert.html" class="more-detailed">Подробнее</a>
-            <a href="form.html" class="registration">Забронировать</a>
+        <p class="read-more-book-it"><a href="desert.html">Подробнее</a>
+            <a href="form.html">Забронировать</a>
         </p>
     </section>
-    <div>
-        <img src="http://placehold.it/5x5" alt="Звездочки">
-        <img src="http://placehold.it/5x5" alt="Звездочки">
-    </div>
+    <div class="srars">
+        <img src="img/sedona-hotels/stars-three.svg" alt="Звездочки">
+        </div>
     <p>Рейтинг: <span>8.9</span></p>
+    <div class="line-gorizont">
+        <img src="img/sedona-hotels/grey-line-gorizont.svg">
+    </div>
     <section>
-        <img src="http://placehold.it/130x90" alt="Фото апартаменты">
-        <h4><a href="villas-at-poco.html">Villas at poco diablo</a></h4>
+        <img src="img/sedona-hotels/diablo-hotel.jpg" width="135" height="90" alt="Фото апартаменты">
+        <h2 class="found"><a href="###">Villas at poco diablo</a></h2>
         <p>Апартаменты от 2000р.</p>
-        <p><a href="villas-at-poco.html" class="more-detailed">Подробнее</a>
+        <p class="read-more-book-it"><a href="villas-at-poco.html">Подробнее</a>
             <a href="form.html" class="registration">Забронировать</a>
         </p>
     </section>
-    <div>
-        <img src="http://placehold.it/5x5" alt="Звездочки">
-        <img src="http://placehold.it/5x5" alt="Звездочки">
-    </div>
+    <div class="srars">
+        <img src="img/sedona-hotels/stars-two.svg" alt="Звездочки">
+        </div>
     <p>Рейтинг: <span>9.2</span></p>
+    <div class="line-gorizont">
+        <img src="img/sedona-hotels/grey-line-gorizont.svg">
+    </div>
 </main>
 <footer>
-    <p class="hesh"><a href="social">#VISITSEDONA</a></p>
+    <p><a href="social">#VISITSEDONA</a></p>
     <div class="batton-social">
         <ul>
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Ютуб</a></li>
+            <li><a class="social-button" href="#"><img src="img/sedona-index/twitter.svg">Твиттер</a></li>
+            <li><a class="social-button" href="#"><img src="img/sedona-index/fb.svg">Фейсбук</a></li>
+            <li><a class="social-button" href="#"><img src="img/sedona-index/youtube.svg">Ютуб</a></li>
         </ul>
     </div>
     <div class="logo-academy"><a href="https://htmlacademy.ru/intensive/htmlcss">
         <span>WEBSITE BY</span>
-        <img src="academy.svg" alt="Логотип академии"></a>
+        <img src="img/sedona-index/logo_academia.svg" alt="Логотип академии"></a>
     </div>
 </footer>
 </body>
