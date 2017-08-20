@@ -43,55 +43,227 @@ body {
     line-height: 36px;
 }
 
-/*
-ПО КЛАССАМ!!!
-nav{
-	font-size: 14px;
-	line-height: 26px;
-	}
-li .active{
-color: #766357;
-}
-section .top-filter input[type="checkbox"] {
-	font-size: 14px;
-	line-height: 21px
-	color: #ffffff;
-}
-section .top-filter input[type="range"] {
-	font-size: 14px;
-	line-height: 21px
-	color: #ffffff;
-p .sorting{
-	font-size: 12px;
-	line-height: 18px
-}
-ul .options{
-	font-size: 12px;
-	line-height: 18px;
-}
-li .price{
-	color: #81b3d2;
-}
-li .no-active-options{
-	color: "???"
-}
-p{
-	font-size: 14px;
-	line-height: 21px;
-	color: #333333;
-}
-p .read-more-book-it{
-	font-size: 14px;
-	line-height: 21px;
-	color: #ffffff;
+.menu a {
+    color: black;
+    text-decoration: none;
 }
 
-индекс
-p .fаive reasons{
-font-size: 14px;
-	line-height: 26px;
-	color: #333333;
+.menu a:hover {
+    color: #766357;
 }
+
+.options a {
+    color: #000000;
+    opacity: .3;
+    text-decoration: none;
+}
+
+.options a:hover {
+    color: #81b3d2;
+    border-bottom: 1px dashed;
+}
+
+.options a:active {
+    color: #81b3d2;
+    border-bottom: 1px dashed;
+}
+
+.arrows a svg path:hover {
+    fill: #231f20;
+}
+
+.arrows a svg path:active {
+    fill: #81b3d2;
+}
+
+.footer_academy {
+    width: 112px;
+    height: 40px;
+}
+
+.footer_academy a svg path:hover {
+    fill: #81b3d2;
+}
+
+.footer_academy a svg path:active {
+    fill: #cacaca
+}
+
+a.btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+    padding: 3px 10px;
+    text-align: center;
+    min-width: 110px;
+}
+
+a.read_more {
+    background: #81b3d2;
+}
+
+a.read_more:hover {
+    background: #669ec0;
+}
+
+a.read_more:active {
+    color: #94b9d2;
+    background: #5496bd;
+}
+
+a.registration {
+    background: #766357;
+}
+
+a.registration:hover {
+    background: #604e43;
+}
+
+a.registration:active {
+    color: #877d78;
+    background: #503e33;
+}
+
+.hotel a {
+    color: black;
+    text-decoration: none;
+}
+
+.hotel a:hover {
+    color: #81b3d2;
+}
+
+.hotel a:active {
+    color: #cacaca;
+}
+
+.social li {
+    display: inline;
+}
+
+.social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 5px 5px;
+    background: #81b3d2;
+}
+
+.social li a:hover {
+    background: #669ec0;
+
+}
+
+.social li a:active {
+    background: #5496bd;
+}
+
+.social a svg path:hover {
+    fill: #81b3d2;
+}
+
+.button_serch {
+    color: white;
+    border: none;
+    text-align: center;
+    width: 565px;
+    height: 85px;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    background: #766357;
+}
+
+.button_serch:hover {
+    background: #604e43;
+}
+
+.button_serch:active {
+    color: #877d78;
+    background: #503e33;
+}
+
+.button_find {
+    color: white;
+    border: none;
+    text-align: center;
+    width: 457px;
+    height: 57px;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    background: #81b3d2;
+}
+
+.button_find:hover {
+    background: #669ec0;
+}
+
+.button_find:active {
+    color: #94b9d2;
+    background: #5496bd;
+}
+
+.selection {
+    width: 565px;
+    height: 395px;
+    background: #ffffff;
+}
+
+.calendar path {
+    fill: #cacaca;
+}
+
+.calendar:hover path {
+    fill: #231f20;
+}
+
+.calendar:active {
+    fill: #81b3d2;
+}
+
+.formfield {
+    background: #f2f2f2;
+    border: none;
+}
+
+.formfield:hover {
+    background: #ebebeb;
+}
+
+.formfield:focus {
+    background: #ffffff;
+    border: 1px #e5e5e5 solid;
+}
+/* Не знаю как поставить внутрь формы. И вообще что это за элемент*/
+.plus {
+    fill: #cacaca;
+}
+
+.plus:hover {
+    fill: #231f20;
+}
+
+plus:active {
+    fill: #231f20;
+}
+
+.minus {
+    fill: #cacaca;
+}
+
+.minus:hover {
+    fill: #231f20;
+}
+
+minus:active {
+    fill: #231f20;
+}
+
+/*
+ПО КЛАССАМ!!!
+
 */
 
 
