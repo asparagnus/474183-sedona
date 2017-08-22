@@ -1,8 +1,25 @@
-/* Шрифты Меню - PTSans */
+/* общее */
 body {
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans", "Arial", serif;
+    font-size: 14px;
+    line-height: 21px;
     font-weight: normal;
-    background-color: #ffffff;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu a {
+    color: black;
+}
+
+.menu a:hover {
+    color: #766357;
 }
 
 .vicualli-hidden {
@@ -16,6 +33,13 @@ body {
     overflow: hidden;
 }
 
+.basis {
+    background-color: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Заголовки */
 .white {
     font-size: 16px;
     line-height: 21px;
@@ -38,24 +62,10 @@ body {
     color: #ffffff;
 }
 
-.index-form {
-    font-size: 30px;
-    line-height: 36px;
-}
-
-.menu a {
-    color: black;
-    text-decoration: none;
-}
-
-.menu a:hover {
-    color: #766357;
-}
-
+/* Отели выбор*/
 .options a {
     color: #000000;
     opacity: .3;
-    text-decoration: none;
 }
 
 .options a:hover {
@@ -68,31 +78,24 @@ body {
     border-bottom: 1px dashed;
 }
 
-.arrows a svg path:hover {
-    fill: #231f20;
+.buttons {
+    width: 135px;
+    height: 35px;
+    padding: 5px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px white solid;
+    text-align: center;
 }
 
-.arrows a svg path:active {
-    fill: #81b3d2;
-}
-
-.footer_academy {
-    width: 112px;
-    height: 40px;
-}
-
-.footer_academy a svg path:hover {
-    fill: #81b3d2;
-}
-
-.footer_academy a svg path:active {
-    fill: #cacaca
+.buttons:hover, .buttons:active {
+    color: black;
+    background-color: white;
 }
 
 a.btn {
     display: inline-block;
     color: white;
-    text-decoration: none;
     user-select: none;
     padding: 3px 10px;
     text-align: center;
@@ -125,49 +128,92 @@ a.registration:active {
     background: #503e33;
 }
 
-.hotel a {
-    color: black;
-    text-decoration: none;
+.arrows a {
+    text-decoration: underline;
 }
 
-.hotel a:hover {
+.arrows a svg path:hover {
+    fill: #231f20;
+}
+
+.arrows a svg path:active {
+    fill: #81b3d2;
+}
+
+/* Отели подробнее и выбор*/
+
+.found a {
+    color: black;
+}
+
+.found a:hover {
     color: #81b3d2;
 }
 
-.hotel a:active {
+.found a:active {
     color: #cacaca;
 }
 
-.social li {
-    display: inline;
+/* index контент*/
+.more {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
 }
 
-.social a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    padding: 5px 5px;
-    background: #81b3d2;
+.reasons {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
 }
 
-.social li a:hover {
-    background: #669ec0;
-
+.town {
+    width: 400px;
+    height: 256px;
+    background-color: #81b3d2;
+    color: white;
+    text-align: center;
 }
 
-.social li a:active {
-    background: #5496bd;
+.mount {
+    width: 400px;
+    height: 256px;
+    background-color: #81b3d2;
+    color: white;
+    text-align: center;
 }
 
-.social a svg path:hover {
-    fill: #81b3d2;
+.hous-food-souv, .area-road-tur {
+    text-align: center;
+}
+
+/* Главная поиск форма*/
+.index-form {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.form-index {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.selection {
+    width: 570px;
+    height: 395px;
+    font-size: 14px;
+    line-height: 26px;
+    background: #ffffff;
+    text-align: center;
 }
 
 .button_serch {
     color: white;
     border: none;
     text-align: center;
-    width: 565px;
+    width: 570px;
     height: 85px;
     font-size: 21px;
     line-height: 26px;
@@ -179,17 +225,13 @@ a.registration:active {
     background: #604e43;
 }
 
-.button_serch:active {
-    color: #877d78;
-    background: #503e33;
-}
-
 .button_find {
     color: white;
     border: none;
     text-align: center;
     width: 457px;
     height: 57px;
+    margin: 30px 10px;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
@@ -197,34 +239,62 @@ a.registration:active {
 }
 
 .button_find:hover {
-    background: #669ec0;
+    background: #ebebeb;
 }
 
 .button_find:active {
     color: #94b9d2;
-    background: #5496bd;
-}
-
-.selection {
-    width: 565px;
-    height: 395px;
     background: #ffffff;
 }
 
+.formfield:hover {
+    background: #ebebeb;
+}
+
+.formfield:focus {
+    background: #ffffff;
+    border: 1px #e5e5e5 solid;
+}
+
+.addults_children {
+    margin: 30px 10px;
+}
+
+.addults_children:hover {
+    background: #ebebeb;
+}
+
+.addults_children:focus {
+    background: #ffffff;
+    border: 1px #e5e5e5 solid;
+}
+
+.addults_children p, input {
+    display: inline;
+}
+
 .calendar path {
-    fill: #cacaca;
+    fill: #d0d0d0;
 }
 
 .calendar:hover path {
-    fill: #231f20;
+    fill: #000000;
 }
 
-.calendar:active {
+.calendar:active path {
     fill: #81b3d2;
 }
 
+.form_row {
+    margin: 30px 40px;
+}
+
 .formfield {
+    text-align: left;
+    padding: 10px 5px;
+    margin: 40px 10px 10px 10px;
     background: #f2f2f2;
+    width: 340px;
     border: none;
 }
 
@@ -236,6 +306,12 @@ a.registration:active {
     background: #ffffff;
     border: 1px #e5e5e5 solid;
 }
+
+.button_serch:active {
+    color: #877d78;
+    background: #503e33;
+}
+
 /* Не знаю как поставить внутрь формы. И вообще что это за элемент*/
 .plus {
     fill: #cacaca;
@@ -261,10 +337,46 @@ minus:active {
     fill: #231f20;
 }
 
-/*
-ПО КЛАССАМ!!!
+/* Футер*/
 
-*/
+.footer_academy {
+    width: 112px;
+    height: 40px;
+}
+
+.footer_academy a svg path:hover {
+    fill: #81b3d2;
+}
+
+.footer_academy a svg path:active {
+    fill: #cacaca
+}
+
+.social li {
+    display: inline;
+}
+
+.social a {
+    display: inline-block;
+    padding: 10px 13px;
+    background: #81b3d2;
+}
+
+.social li a:hover {
+    background: #669ec0;
+}
+
+.social a svg path:hover {
+    fill: #81b3d2;
+}
+
+.social li a:active {
+    background: #5496bd;
+}
+
+
+
+
 
 
 
