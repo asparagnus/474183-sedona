@@ -6,12 +6,22 @@ body {
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
+    letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
 
 a {
     text-decoration: none;
+}
+
+.menu {
+    list-style-type: none;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .menu a {
@@ -34,15 +44,17 @@ a {
 }
 
 .basis {
-    background-color: #ffffff;
     width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
 
 /* Заголовки */
 .white {
     font-size: 16px;
     line-height: 21px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
     color: #ffffff;
 }
 
@@ -56,6 +68,25 @@ a {
     line-height: 26px;
 }
 
+.structure {
+    list-style-type: none;
+    padding: 0;
+}
+
+.structure li {
+    letter-spacing: 0.5px;
+    color: white;
+    margin: 10px;
+}
+
+.structure li svg:active path {
+    fill: #6a6a6a;
+}
+
+.structure .sleep svg:active {
+    fill: #6a6a6a;
+}
+
 .index-city {
     font-size: 21px;
     line-height: 21px;
@@ -63,9 +94,18 @@ a {
 }
 
 /* Отели выбор*/
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    color: #81b3d2;
+}
+
 .options a {
-    color: #000000;
-    opacity: .3;
+    color: #cacaca;
+    border-bottom: 1px dashed;
 }
 
 .options a:hover {
@@ -74,8 +114,8 @@ a {
 }
 
 .options a:active {
-    color: #81b3d2;
-    border-bottom: 1px dashed;
+    color: #000000;
+    border-bottom: none;
 }
 
 .buttons {
@@ -83,9 +123,10 @@ a {
     height: 35px;
     padding: 5px;
     color: white;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px white solid;
     text-align: center;
+    text-transform: uppercase;
+    border: 2px white solid;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .buttons:hover, .buttons:active {
@@ -93,39 +134,60 @@ a {
     background-color: white;
 }
 
-a.btn {
+.sorting {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.read_more {
     display: inline-block;
     color: white;
+    font-weight: 600;
     user-select: none;
     padding: 3px 10px;
     text-align: center;
     min-width: 110px;
-}
-
-a.read_more {
     background: #81b3d2;
 }
 
-a.read_more:hover {
+.read_more:hover {
     background: #669ec0;
 }
 
-a.read_more:active {
+.read_more:active {
     color: #94b9d2;
     background: #5496bd;
 }
 
-a.registration {
+.registration {
+    color: white;
+    font-weight: 600;
+    user-select: none;
+    padding: 4px 10px;
+    text-align: center;
+    min-width: 110px;
     background: #766357;
 }
 
-a.registration:hover {
+.registration:hover {
     background: #604e43;
 }
 
-a.registration:active {
+.registration:active {
     color: #877d78;
     background: #503e33;
+}
+
+.price {
+    color: #333333;
+    letter-spacing: 0.5px;
+}
+
+.rating {
+    color: #666666;
+    padding: 5px 5px;
+    width: 110px;
+    background: #f2f2f2;
 }
 
 .arrows a {
@@ -201,7 +263,7 @@ a.registration:active {
 }
 
 .selection {
-    width: 570px;
+    width: 545px;
     height: 395px;
     font-size: 14px;
     line-height: 26px;
@@ -211,6 +273,7 @@ a.registration:active {
 
 .button_serch {
     color: white;
+    font-weight: bold;
     border: none;
     text-align: center;
     width: 570px;
@@ -239,12 +302,18 @@ a.registration:active {
 }
 
 .button_find:hover {
-    background: #ebebeb;
+    background: #669ec0;
 }
 
 .button_find:active {
     color: #94b9d2;
-    background: #ffffff;
+    background: #5496bd;
+}
+
+.form_row label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .formfield:hover {
@@ -254,6 +323,12 @@ a.registration:active {
 .formfield:focus {
     background: #ffffff;
     border: 1px #e5e5e5 solid;
+}
+
+.addults_children p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .addults_children {
@@ -292,9 +367,9 @@ a.registration:active {
 .formfield {
     text-align: left;
     padding: 10px 5px;
-    margin: 40px 10px 10px 10px;
+    margin: 30px 5px 10px 5px;
     background: #f2f2f2;
-    width: 340px;
+    width: 330px;
     border: none;
 }
 
@@ -349,7 +424,7 @@ minus:active {
 }
 
 .footer_academy a svg path:active {
-    fill: #cacaca
+    fill: #cacaca;
 }
 
 .social li {
@@ -373,6 +448,14 @@ minus:active {
 .social li a:active {
     background: #5496bd;
 }
+
+.visit a{
+    color: #81b3d2;
+}
+
+.visit a:active{
+    color: #5496bd;
+   }
 
 
 
