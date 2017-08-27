@@ -96,6 +96,7 @@ a {
 /* Отели выбор*/
 .options {
     list-style-type: none;
+
     padding: 0;
 }
 
@@ -180,6 +181,7 @@ a {
 
 .price {
     color: #333333;
+    display: inline-block;
     letter-spacing: 0.5px;
 }
 
@@ -369,7 +371,7 @@ a {
     padding: 10px 5px;
     margin: 30px 5px 10px 5px;
     background: #f2f2f2;
-    width: 330px;
+    width: 300px;
     border: none;
 }
 
@@ -449,13 +451,225 @@ minus:active {
     background: #5496bd;
 }
 
-.visit a{
+.visit a {
     color: #81b3d2;
 }
 
-.visit a:active{
+.visit a:active {
     color: #5496bd;
-   }
+}
+
+/* Флексы */
+/* Главная*/
+
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+.menu li {
+    min-height: 56px;
+    line-height: 56px;
+}
+
+.logo {
+    min-height: 70px;
+    z-index: 1000;
+}
+
+.welcome {
+    margin-top: -35px;
+}
+
+.sedona {
+    margin-bottom: 54px;
+}
+
+.about_town {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+.hous-food-souv {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    min-height: 180px;
+    margin-bottom: 80px;
+}
+
+.about_mount {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 45px;
+}
+
+.area-road-tur {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    min-height: 140px;
+    margin-bottom: 55px;
+}
+
+.hows {
+    min-width: 400px;
+}
+
+.form-index {
+    margin-bottom: 50px;
+}
+
+.buttons_serch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(../img/sedona-index/map.jpg);
+    height: 475px;
+    margin-bottom: 35px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 85px;
+}
+
+/* Отели*/
+.top-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-image: url("../img/sedona-hotels/head-background.jpg");
+    margin-top: -35px;
+    margin-bottom: 30px;
+}
+
+.logo_hotel {
+    z-index: 1000;
+}
+
+.infrastructure, .acc_type {
+    margin-left: 72px;
+    min-width: 190px;
+}
+
+.cost {
+    margin-left: auto;
+    margin-right: 72px;
+}
+
+/* Найдено*/
+.results_found {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.found {
+    margin-left: 72px;
+    margin-bottom: 5px;
+}
+
+.sorting {
+    margin-left: 45px;
+}
+
+.options {
+    margin-left: 39px;
+}
+
+.price {
+    margin-left: 30px;
+}
+
+.arrows {
+    margin-left: auto;
+    margin-right: 72px;
+}
+
+.adv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.f_descrip {
+    margin-left: 30px;
+}
+
+.stars {
+    margin-left: auto;
+    margin-right: 72px;
+}
+
+.hotel {
+    margin-left: 0;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.hotel_photo {
+    margin-left: 72px;
+}
+
+/* Форма регистрации*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_row {
+    margin-bottom: 31px;
+}
+
+.addults_children {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
