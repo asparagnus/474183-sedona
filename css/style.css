@@ -8,8 +8,8 @@ body {
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background-color: #f2f2f2;
-}
+    background: #f2f2f2;
+    }
 
 a {
     text-decoration: none;
@@ -49,6 +49,18 @@ a {
     background-color: #ffffff;
 }
 
+.welcome-mask{
+    position: absolute;
+    top: 550px;
+}
+
+.sedona{
+   height: 213px;
+    width: 1200px;
+    margin-top: -200px;
+
+}
+
 /* Заголовки */
 .white {
     font-size: 16px;
@@ -76,7 +88,7 @@ a {
 .structure li {
     letter-spacing: 0.5px;
     color: white;
-    margin: 10px;
+    margin: 22px;
 }
 
 .structure li svg:active path {
@@ -128,7 +140,8 @@ a {
     text-transform: uppercase;
     border: 2px white solid;
     background: rgba(255, 255, 255, 0.1);
-}
+    margin-left: 85px;
+    }
 
 .buttons:hover, .buttons:active {
     color: black;
@@ -149,7 +162,7 @@ a {
     text-align: center;
     min-width: 110px;
     background: #81b3d2;
-}
+   }
 
 .read_more:hover {
     background: #669ec0;
@@ -192,9 +205,9 @@ a {
     background: #f2f2f2;
 }
 
-.arrows a {
-    text-decoration: underline;
-}
+/*.arrows a {
+    text-decoration: none;
+}*/
 
 .arrows a svg path:hover {
     fill: #231f20;
@@ -219,6 +232,8 @@ a {
 }
 
 /* index контент*/
+
+
 .more {
     font-size: 21px;
     line-height: 26px;
@@ -229,7 +244,8 @@ a {
     font-size: 14px;
     line-height: 26px;
     text-align: center;
-}
+    font-weight: 100;
+    }
 
 .town {
     width: 400px;
@@ -239,16 +255,23 @@ a {
     text-align: center;
 }
 
-.mount {
+.town {
     width: 400px;
-    height: 256px;
+    height: 241px;
     background-color: #81b3d2;
     color: white;
     text-align: center;
+    padding-top: 15px;
 }
 
 .hous-food-souv, .area-road-tur {
     text-align: center;
+}
+
+.type{
+    font-size: 16px;
+    line-height: 21px;
+ font-weight: bold;
 }
 
 /* Главная поиск форма*/
@@ -294,6 +317,7 @@ a {
     color: white;
     border: none;
     text-align: center;
+    font-weight: bold;
     width: 457px;
     height: 57px;
     margin: 30px 10px;
@@ -327,6 +351,19 @@ a {
     border: 1px #e5e5e5 solid;
 }
 
+.children {
+    background: #f2f2f2;
+}
+
+.children:hover {
+    background: #ebebeb;
+}
+
+.children:focus {
+    background: #ffffff;
+    border: 1px #e5e5e5 solid;
+}
+
 .addults_children p {
     font-size: 14px;
     line-height: 26px;
@@ -335,15 +372,6 @@ a {
 
 .addults_children {
     margin: 30px 10px;
-}
-
-.addults_children:hover {
-    background: #ebebeb;
-}
-
-.addults_children:focus {
-    background: #ffffff;
-    border: 1px #e5e5e5 solid;
 }
 
 .addults_children p, input {
@@ -444,7 +472,11 @@ minus:active {
 }
 
 .social a svg path:hover {
-    fill: #81b3d2;
+    fill: #ffffff;
+}
+
+.social a svg path:active {
+    fill: #5496bd;
 }
 
 .social li a:active {
@@ -452,17 +484,19 @@ minus:active {
 }
 
 .visit a {
-    color: #81b3d2;
+    color: #000000;
+    font-weight: bold;
 }
 
 .visit a:active {
     color: #5496bd;
+    font-weight: bold;
 }
 
 /* Флексы */
 /* Главная*/
 
-.menu {
+.flex-menu {
     display: flex;
     padding: 0;
     margin: 0;
@@ -472,8 +506,10 @@ minus:active {
 }
 
 .menu li {
-    min-height: 56px;
-    line-height: 56px;
+    height: 56px;
+    display: inline-block;
+    margin-right: 72px;
+    margin-left: 72px;
 }
 
 .logo {
@@ -486,8 +522,16 @@ minus:active {
 }
 
 .sedona {
-    margin-bottom: 54px;
-}
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    position: relative;
+    height: 210px;
+    width: 1200px;
+    margin-top: -235px;
+    }
 
 .about_town {
     display: flex;
@@ -506,19 +550,20 @@ minus:active {
 .about_mount {
     display: flex;
     flex-direction: row-reverse;
-    margin-bottom: 45px;
-}
+    }
 
 .area-road-tur {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    min-height: 140px;
+    height: 259px;
     margin-bottom: 55px;
+    background-color: #eeeeee;
 }
 
 .hows {
-    min-width: 400px;
+    padding-top: 20px;
+    width: 400px;
 }
 
 .form-index {
@@ -545,8 +590,8 @@ minus:active {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    min-height: 85px;
-}
+    height: 85px;
+       }
 
 /* Отели*/
 .top-filter {
@@ -554,8 +599,8 @@ minus:active {
     flex-direction: row;
     justify-content: flex-start;
     background-image: url("../img/sedona-hotels/head-background.jpg");
-    margin-top: -35px;
-    margin-bottom: 30px;
+    margin-top: -30px;
+    margin-bottom: 10px;
 }
 
 .logo_hotel {
@@ -564,12 +609,30 @@ minus:active {
 
 .infrastructure, .acc_type {
     margin-left: 72px;
-    min-width: 190px;
+    width: 190px;
 }
 
 .cost {
     margin-left: auto;
     margin-right: 72px;
+}
+
+.cost .white{
+    margin-bottom: 5px;
+}
+
+.slider{
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    width: 310px;
+    height: 28px;
+    padding-top: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.range_but{
+    margin-top: 15px;
 }
 
 /* Найдено*/
@@ -578,8 +641,7 @@ minus:active {
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
-    margin-bottom: 30px;
-}
+    }
 
 .found {
     margin-left: 72px;
@@ -613,12 +675,23 @@ minus:active {
 
 .f_descrip {
     margin-left: 30px;
-}
+      }
 
 .stars {
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-right: 72px;
+    margin-left: auto;
+    min-height: 90px;
 }
+
+.rating {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
 
 .hotel {
     margin-left: 0;
@@ -628,7 +701,18 @@ minus:active {
 
 .hotel_photo {
     margin-left: 72px;
+    }
+
+.adv{
+    margin-bottom: 12px;
 }
+.line-gorizont{
+    margin-bottom: 27px;
+    }
+
+
+
+
 
 /* Форма регистрации*/
 
@@ -636,7 +720,7 @@ minus:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    }
 
 .form_row {
     margin-bottom: 31px;
@@ -645,24 +729,6 @@ minus:active {
 .addults_children {
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

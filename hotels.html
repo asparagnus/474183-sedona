@@ -10,12 +10,14 @@
 <body>
 <section class="basis">
     <header>
-        <nav>
+        <nav class="flex-menu">
             <ul class="menu">
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
-                <li class="logo_hotel"><a href="index.html" title="На главную">
-                    <img src="img/sedona-hotels/logo.png" width="138" height="70" alt="Логотип Седоны"></a></li>
+            </ul>
+            <div class="logo_hotel"><a href="index.html" title="На главную">
+                <img src="img/sedona-hotels/logo.png" width="138" height="70" alt="Логотип Седоны"></a></div>
+            <ul class="menu">
                 <li><a href="#">Карта штата</a></li>
                 <li><a href="hotel.html">Гостиницы</a></li>
             </ul>
@@ -25,8 +27,8 @@
         <h1 class="vicualli-hidden">Гостиницы Седоны</h1>
         <section class="top-filter">
             <div class="infrastructure">
-                <h4 class="white">Инфраструктура:</h4>
                 <ul class="structure">
+                    <li class="type">Инфраструктура:</li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
                             <path fill="#FFFFFF"
@@ -56,8 +58,8 @@
             </div>
 
             <div class="acc_type">
-                <h4 class="white">Тип жилья:</h4>
                 <ul class="structure">
+                    <li class="type">Тип жилья:</li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
                             <path fill="#FFFFFF"
@@ -89,17 +91,21 @@
             </div>
             <div class="cost">
                 <h4 class="white">Стоимость в сутки (р):</h4>
+
+
                 <form action="#" method="get">
-                    <p>От 0 до 3000</p>
+                    <p class="slider">От 0 до 3000</p>
+
                     <input type="range" id="price" name="priceday" min="0" max="3000" step="1">
-                    <div>
+                    <div class="range_but">
                         <input type="submit" class="buttons" value="Показать">
                     </div>
                 </form>
+
             </div>
         </section>
         <section class="results_found">
-            <h2 class="found">НАЙДЕНО:<span>3</span></h2>
+            <h2 class="found">НАЙДЕНО:<span> 3</span></h2>
             <p class="sorting">СОРТИРОВКА:</p>
             <ul class="options">
                 <li class="price">ПО ЦЕНЕ</li>
@@ -119,13 +125,15 @@
                 </a>
             </div>
         </section>
+
         <div class="line-gorizont">
             <img src="img/sedona-hotels/grey-line-gorizont.svg" alt="Линия разделения">
         </div>
+
         <section class="adv">
             <div class="hotel_photo">
-            <a href="#"><img class="description" src="img/sedona-hotels/amara-hotel.jpg" width="135" height="90"
-                             alt="Фото гостиница"></a>
+                <a href="#"><img class="description" src="img/sedona-hotels/amara-hotel.jpg" width="135" height="90"
+                                 alt="Фото гостиница"></a>
             </div>
             <div class="f_descrip">
                 <h2 class="found hotel"><a href="#">AMARA RESORT&SPA </a></h2>
@@ -145,10 +153,11 @@
             <img src="img/sedona-hotels/grey-line-gorizont.svg" alt="Линия разделения">
         </div>
 
+
         <section class="adv">
             <div class="hotel_photo">
                 <a href="#"><img class="description" src="img/sedona-hotels/desert-hotel.jpg" width="135" height="90"
-                             alt="Фото мотель"></a>
+                                 alt="Фото мотель"></a>
             </div>
             <div class="f_descrip">
                 <h2 class="found hotel"><a href="#">Desert quail inn</a></h2>
@@ -167,8 +176,8 @@
         </div>
         <section class="adv">
             <div class="hotel_photo">
-            <a href="#"><img class="description" src="img/sedona-hotels/diablo-hotel.jpg" width="135" height="90"
-                             alt="Фото апартаменты"></a>
+                <a href="#"><img class="description" src="img/sedona-hotels/diablo-hotel.jpg" width="135" height="90"
+                                 alt="Фото апартаменты"></a>
             </div>
             <div class="f_descrip">
                 <h2 class="found hotel"><a href="#">Villas at poco diablo</a></h2>
