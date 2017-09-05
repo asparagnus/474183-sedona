@@ -4,6 +4,6 @@
 
 Пример структуры файлов:
 
-js/
-| - script.js
-| - [другие *.js файлы]
+buttons/
+| - script.buttons
+| - [другие *.buttons файлы]

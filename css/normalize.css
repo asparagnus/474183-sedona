@@ -358,7 +358,7 @@ textarea {
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
+ * Correct the cursor style of increment and decrement buttons.js in Chrome.
  */
 
 [type="number"]::-webkit-inner-spin-button,
@@ -377,7 +377,7 @@ textarea {
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ * Remove the inner padding and cancel buttons.js in Chrome and Safari on macOS.
  */
 
 [type="search"]::-webkit-search-cancel-button,
