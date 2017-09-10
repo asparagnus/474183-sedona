@@ -117,7 +117,7 @@ a {
 .about_town {
     display: flex;
     flex-direction: row;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 }
 
 .hous-food-souv {
@@ -125,13 +125,13 @@ a {
     flex-direction: row;
     align-items: baseline;
     min-height: 180px;
-    margin-bottom: 69px;
+    margin-bottom: 65px;
 }
 
 .about_mount {
     display: flex;
     flex-direction: row-reverse;
-}
+    }
 
 .index-city {
     width: 180px;
@@ -149,7 +149,7 @@ a {
 
 .index-city-n-p {
     letter-spacing: normal;
-    margin-bottom: 65px;
+    margin-bottom: 63px;
     width: 310px;
     margin-left: auto;
     margin-right: auto;
@@ -163,7 +163,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     background-color: #eeeeee;
 }
 
@@ -530,10 +530,11 @@ input[type="checkbox"]:disabled:checked + span {
 .button_serch {
     font-size: 21px;
     line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
     width: 565px;
     height: 86px;
     color: white;
-    font-weight: bold;
     font-stretch: condensed;
     border: none;
     text-align: center;
@@ -1040,6 +1041,10 @@ input[type="checkbox"]:disabled:checked + span {
     border: 0;
 }
 
+input[type=text], input[type=date], button[type="submit"]{
+    font-family: "PT Sans", "Arial", serif;
+}
+
 /* Футер*/
 .footer-index {
     display: flex;
@@ -1048,7 +1053,7 @@ input[type="checkbox"]:disabled:checked + span {
     align-items: center;
     width: 100%;
     min-height: 120px;
-    background-color: rgba(249, 251, 246, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     bottom: 0;
 }
