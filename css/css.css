@@ -108,8 +108,8 @@ a {
 
 .sedona {
     position: relative;
-    top: 32px;
-    margin-bottom: 83px;
+    margin-bottom: 53px;
+    margin-top: 52px;
     background-color: #ffffff;
 }
 
@@ -292,8 +292,12 @@ a {
 }
 
 .checkbox-text {
-    letter-spacing: 0.5;
+    font-size: 14px;
+    line-height: 21px;
     font-weight: normal;
+    margin-left: 40px;
+    display: inline-block;
+    min-width: 100px;
 }
 
 .type {
@@ -428,11 +432,15 @@ a {
     text-align: center;
 }
 
-.arrows a svg path:hover {
+.arrows a {
+    fill: #cacaca;
+}
+
+.arrows a:hover {
     fill: #231f20;
 }
 
-.arrows a svg path:active {
+.arrows a:active {
     fill: #81b3d2;
 }
 
@@ -526,7 +534,6 @@ input[type="checkbox"]:disabled:checked + span {
     color: white;
     font-weight: bold;
     font-stretch: condensed;
-    letter-spacing: 0.8px;
     border: none;
     text-align: center;
     text-transform: uppercase;
@@ -1028,6 +1035,10 @@ input[type="checkbox"]:disabled:checked + span {
     background: #503e33;
 }
 
+.border0 {
+    border: 0;
+}
+
 /* Футер*/
 .footer {
     display: flex;
@@ -1035,23 +1046,6 @@ input[type="checkbox"]:disabled:checked + span {
     justify-content: space-between;
     align-items: center;
     margin-top: 17px;
-}
-
-.footer_academy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 200px;
-    margin-top: 5;
-    margin-right: 100px;
-}
-
-.footer_academy a svg path:hover {
-    fill: #81b3d2;
-}
-
-.footer_academy a svg path:active {
-    fill: #cacaca;
 }
 
 .social li {
@@ -1063,17 +1057,18 @@ input[type="checkbox"]:disabled:checked + span {
     display: inline-block;
     padding: 12px 15px;
     background: #81b3d2;
+    fill: #FFF;
 }
 
 .social li a:hover {
     background: #669ec0;
 }
 
-.social a svg path:hover {
+.social a:hover {
     fill: #ffffff;
 }
 
-.social a svg path:active {
+.social a:active {
     fill: #5496bd;
 }
 
@@ -1098,7 +1093,7 @@ input[type="checkbox"]:disabled:checked + span {
     font-weight: bold;
 }
 
-.website a {
+.website {
     color: black;
     display: inline-block;
     font-size: 14px;
@@ -1106,10 +1101,23 @@ input[type="checkbox"]:disabled:checked + span {
     letter-spacing: normal;
 }
 
-.website a:hover {
-    color: #81b3d2;
+.footer_academy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 5;
+    margin-right: 100px;
 }
 
-.website a:active {
-    color: #cacaca;
+.footer_academy a {
+    fill: #231f20;
+}
+
+.footer_academy a:hover {
+    fill: #81b3d2;
+}
+
+.footer_academy a:active {
+    fill: #cacaca;
 }
