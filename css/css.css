@@ -1041,7 +1041,7 @@ input[type="checkbox"]:disabled:checked + span {
     border: 0;
 }
 
-input[type=text], input[type=date], button[type="submit"]{
+input[type=text], input[type=date], input[type=button], button[type="submit"]{
     font-family: "PT Sans", "Arial", serif;
 }
 
