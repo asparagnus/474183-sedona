@@ -589,7 +589,7 @@ input[type="checkbox"]:disabled:checked + span {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    letter-spacing: 0.5px;
+    margin-left: 500px;
     width: 565px;
     height: 86px;
     color: white;
@@ -598,7 +598,11 @@ input[type="checkbox"]:disabled:checked + span {
     text-align: center;
     text-transform: uppercase;
     background: #766357;
-}
+   }
+
+.button_serch a{
+    color: white;
+    }
 
 .button_serch:hover {
     background: #604e43;
