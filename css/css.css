@@ -9,7 +9,8 @@ body {
     text-transform: uppercase;
     background: #f2f2f2;
 }
-input[type=text], input[type=date], input[type=button], button{
+
+input[type=text], input[type=date], input[type=button], button {
     font: inherit;
 }
 
@@ -113,13 +114,13 @@ a {
 
 .menu a:hover {
     color: #89b7c7;
-    }
+}
 
-.menu a:active{
+.menu a:active {
     color: #766357;
 }
 
-.menu .menu-on-page{
+.menu .menu-on-page {
     color: #766357;
 }
 
@@ -175,7 +176,7 @@ a {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
-    }
+}
 
 .index-city {
     width: 180px;
@@ -347,7 +348,7 @@ a {
     font-weight: bold;
     color: white;
     margin: 21px;
-    }
+}
 
 .checkbox-text {
     font-size: 14px;
@@ -362,7 +363,7 @@ a {
     font-size: 14px;
     line-height: 21px;
     font-weight: bold;
-    }
+}
 
 .index-city {
     font-size: 21px;
@@ -644,7 +645,6 @@ input[type="checkbox"]:disabled:checked + span {
     border: 1px #e5e5e5 solid;
 }
 
-
 .form_row input:hover {
     background: #ebebeb;
 }
@@ -653,7 +653,6 @@ input[type="checkbox"]:disabled:checked + span {
     background: #ffffff;
     border: 1px #e5e5e5 solid;
 }
-
 
 /* анимация*/
 .selection:hover, .selection:active {
@@ -903,7 +902,7 @@ input[type="checkbox"]:disabled:checked + span {
     -ms-flex-align: start;
     align-items: flex-start;
     margin-top: 27px;
-    }
+}
 
 .f_descrip {
     margin-left: 30px;
@@ -1244,4 +1243,4 @@ input[type="checkbox"]:disabled:checked + span {
 
 .footer_academy a:active {
     fill: #cacaca;
-   }
+}

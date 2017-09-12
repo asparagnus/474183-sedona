@@ -3,7 +3,7 @@ var popup = document.querySelector(".form");
 var close = document.querySelector(".form-hide");
 
 link.addEventListener("click", function () {
-popup.classList.toggle("form-hide");
+    popup.classList.toggle("form-hide");
 });
 
 close.addEventListener("click", function () {
