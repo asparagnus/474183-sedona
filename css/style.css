@@ -44,8 +44,6 @@ a {
     overflow: hidden;
 }
 
-/* меню общее*/
-
 .top-menu {
     position: relative;
 }
@@ -117,14 +115,21 @@ a {
 }
 
 .menu a:active {
+    color: #f1f1f1;
+}
+
+.menu .active a {
     color: #766357;
 }
 
-.menu .menu-on-page {
-    color: #766357;
+.menu .active a:hover {
+    color: #89b7c7;
 }
 
-/* Большое фото Седона и контекст главной */
+.menu .active a:active {
+    color: #f1f1f1;
+}
+
 .welcome {
     position: relative;
     top: 0;
@@ -138,7 +143,7 @@ a {
 .sedona {
     position: relative;
     margin-bottom: 53px;
-    margin-top: 56px;
+    margin-top: 53px;
     background-color: #ffffff;
 }
 
@@ -150,22 +155,8 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 33px;
-}
-
-.hous-food-souv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    min-height: 180px;
-    margin-bottom: 65px;
 }
 
 .about_mount {
@@ -201,7 +192,6 @@ a {
     left: 0;
     right: 0;
     display: block;
-
 }
 
 .area-road-tur {
@@ -219,7 +209,7 @@ a {
     background-color: #eeeeee;
 }
 
-.black-n-p {
+.advantages-city {
     margin-top: 20px;
     margin-bottom: 60px;
     letter-spacing: 0.3px;
@@ -231,9 +221,23 @@ a {
     display: block;
 }
 
-.hows {
+.house-meal {
+    margin-left: 50px;
+    width: 290px;
+    letter-spacing: normal;
+}
+
+.meal {
+    margin-left: 52px;
+    width: 290px;
+    letter-spacing: normal;
+
+}
+
+.house {
     padding-top: 22px;
     width: 400px;
+    letter-spacing: normal;
 }
 
 .more {
@@ -268,10 +272,6 @@ a {
     background-color: #81b3d2;
 }
 
-.hous-food-souv, .area-road-tur {
-    text-align: center;
-}
-
 .form-index {
     letter-spacing: normal;
     margin-bottom: 45px;
@@ -298,7 +298,6 @@ a {
     margin-bottom: 22px;
 }
 
-/* Заголовки */
 .white {
     font-size: 16px;
     line-height: 21px;
@@ -321,14 +320,31 @@ a {
     display: block;
 }
 
-.hous-food-souv-p {
-    letter-spacing: normal;
-    width: 290px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    display: block;
+.house-meal-souvenirs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 65px;
+    text-align: center;
+    margin-left: 0;
+}
+
+.house-meal-souvenirs p, .area-road-tur {
+    text-align: center;
+}
+
+.meal-souvenirs {
+    width: 300px;
 }
 
 .found {
@@ -336,18 +352,25 @@ a {
     line-height: 26px;
 }
 
-/* hotel */
-.structure {
-    margin-top: 20px;
+.hotels-filter-list {
     list-style-type: none;
     padding: 0;
+    margin-top: 7px;
+    margin-left: 50px;
+    min-width: 210px;
 }
 
-.structure li {
+.hotels-filter-list label {
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
 
+.hotels-filter-list li {
     font-weight: bold;
     color: white;
-    margin: 21px;
+    margin: 21px 21px 0px 21px;
 }
 
 .checkbox-text {
@@ -386,7 +409,6 @@ a {
     letter-spacing: 0;
 }
 
-/* Отели выбор*/
 .options {
     list-style-type: none;
     padding: 0;
@@ -398,7 +420,7 @@ a {
 
 .options a {
     color: #cacaca;
-    border-bottom: 1px dashed;
+    border-bottom: 1px #81b3d2 dashed;
 }
 
 .options a:hover {
@@ -486,7 +508,7 @@ a {
     color: #666666;
     background: #f2f2f2;
     position: absolute;
-    top: 45px;
+    top: 46px;
     margin-bottom: 0px;
     text-align: center;
 }
@@ -503,8 +525,6 @@ a {
     fill: #81b3d2;
 }
 
-/* Отели подробнее и выбор*/
-
 .found_hotel a {
     color: black;
 }
@@ -516,8 +536,6 @@ a {
 .found_hotel a:active {
     color: #cacaca;
 }
-
-/* Чекбоксы в отелях*/
 
 .top-filter label {
     width: 26px;
@@ -560,13 +578,12 @@ input[type="checkbox"]:disabled:checked + span {
     height: 25px;
 }
 
-/* Главная поиск форма*/
 .index-form {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
     letter-spacing: normal;
-    padding-top: 12px;
+    padding-top: 15px;
 }
 
 .form-index {
@@ -589,7 +606,7 @@ input[type="checkbox"]:disabled:checked + span {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    margin-left: 500px;
+    margin-left: 0;
     width: 565px;
     height: 86px;
     color: white;
@@ -598,11 +615,11 @@ input[type="checkbox"]:disabled:checked + span {
     text-align: center;
     text-transform: uppercase;
     background: #766357;
-   }
+}
 
-.button_serch a{
+.button_serch a {
     color: white;
-    }
+}
 
 .button_serch:hover {
     background: #604e43;
@@ -632,8 +649,8 @@ input[type="checkbox"]:disabled:checked + span {
     background: #5496bd;
 }
 
-.mt50 {
-    margin-top: 50px;
+.field {
+    margin-top: 53px;
 }
 
 .children {
@@ -649,26 +666,21 @@ input[type="checkbox"]:disabled:checked + span {
     border: 1px #e5e5e5 solid;
 }
 
+.form_row input {
+    background: #f2f2f2;
+}
+
 .form_row input:hover {
     background: #ebebeb;
 }
 
 .form_row input:focus {
     background: #ffffff;
-    border: 1px #e5e5e5 solid;
+    border: 1.5px solid #e5e5e5;
 }
 
-/* анимация*/
-.selection:hover, .selection:active {
-    box-shadow: 1px 1px #766357,
-    2px 2px #766357,
-    3px 3px #766357,
-    4px 4px #766357,
-    5px 5px #766357,
-    6px 6px #766357,
-    7px 7px #766357;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+.selection, .selection:hover, .selection:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .form-hide {
@@ -676,7 +688,6 @@ input[type="checkbox"]:disabled:checked + span {
     opacity: 0;
 }
 
-/* Hotel описание*/
 .top-filter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -695,28 +706,18 @@ input[type="checkbox"]:disabled:checked + span {
     background-image: url(../img/sedona-hotels/head-background.jpg);
 }
 
+.top-filter form {
+    display: inline-block;
+}
+
 .logo_hotel {
     z-index: 1;
 }
 
-.infrastructure, .acc_type {
+.infrastructure {
     margin-left: 47px;
-    margin-top: 7px;
-    width: 210px;
 }
 
-.infrastructure label, .acc_type label {
-    display: inline-block;
-    margin-right: 10px;
-    padding-top: 5px;
-    vertical-align: middle;
-}
-
-.infrastructure li, .acc_type li {
-    margin-bottom: 0;
-}
-
-/* Hotel из вебинара*/
 .filter-range {
     margin-left: auto;
     margin-right: 70px;
@@ -839,7 +840,6 @@ input[type="checkbox"]:disabled:checked + span {
     background: #ffffff;
 }
 
-/* Найдено в hotel*/
 .results_found {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -885,6 +885,7 @@ input[type="checkbox"]:disabled:checked + span {
 
 .arrows {
     margin-left: 495px;
+    border: 0;
 }
 
 .arrows .arr {
@@ -912,6 +913,9 @@ input[type="checkbox"]:disabled:checked + span {
     margin-left: 30px;
     margin-bottom: 13px;
     max-width: 750px;
+    border-bottom: 1px solid #e5e5e5;
+    opacity: 0.1;
+    margin-top: 18px;
 }
 
 .stars {
@@ -953,7 +957,6 @@ input[type="checkbox"]:disabled:checked + span {
     margin-top: 18px;
 }
 
-/* Форма регистрации на главной*/
 .form {
     width: 570px;
     position: absolute;
@@ -976,7 +979,7 @@ input[type="checkbox"]:disabled:checked + span {
 }
 
 .form_row .child_label {
-    margin-left: -13px;
+    margin-left: -11px;
     padding-right: 25px;
     text-align: right;
 }
@@ -1008,7 +1011,7 @@ input[type="checkbox"]:disabled:checked + span {
 }
 
 .minus_plus button {
-    border: none;
+    border: 0;
     background: none;
     color: #a8a8a8;
     outline: none;
@@ -1064,17 +1067,18 @@ input[type="checkbox"]:disabled:checked + span {
 
 .calendar_input {
     padding: 5px;
-    width: 330px;
+    width: 335px;
     border: none;
     position: relative;
     margin-left: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     background: #f2f2f2;
 }
 
 .calendar_input input[type=text], .calendar_input input[type=date] {
     margin: 0;
     width: 100%;
+    text-transform: uppercase;
     border: none;
     outline: none;
     background: none;
@@ -1134,11 +1138,6 @@ input[type="checkbox"]:disabled:checked + span {
     background: #503e33;
 }
 
-.border0 {
-    border: 0;
-}
-
-/* Футер*/
 .footer-index {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1185,7 +1184,7 @@ input[type="checkbox"]:disabled:checked + span {
 
 .social a {
     display: inline-block;
-    padding: 12px 15px;
+    padding: 14px 15px;
     background: #81b3d2;
     fill: #FFF;
 }
@@ -1216,7 +1215,6 @@ input[type="checkbox"]:disabled:checked + span {
 .website {
     font-size: 14px;
     line-height: 26px;
-
     color: black;
     display: inline-block;
     letter-spacing: normal;
